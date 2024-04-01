@@ -100,7 +100,7 @@ class _RegisterPageState extends State<RegisterPage> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              child: Text(
+              child: const Text(
                 'OK',
                 style: TextStyle(color: Colors.white),
               ),
@@ -121,13 +121,13 @@ class _RegisterPageState extends State<RegisterPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Image.asset(
                   'lib/images/black.png', // Adjust the path as per your project structure
                   width: 100,
                   height: 100,
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Text(
                   'Let\'s create an account for you!',
                   style: TextStyle(
@@ -135,37 +135,37 @@ class _RegisterPageState extends State<RegisterPage> {
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 MyTextField(
                   controller: emailController,
                   hintText: 'Email',
                   obscureText: false,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 MyTextField(
                   controller: passwordController,
                   hintText: 'Password',
                   obscureText: true,
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 MyTextField(
                   controller: confirmPasswordController,
                   hintText: 'Confirm Password',
                   obscureText: true,
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 MyButton(
-                  text: "Sign Up",
+                  text: "Create Account",
                   onTap: isLoading ? null : signUserUp,
                 ),
                 if (isLoading)
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
+                  const Padding(
+                    padding: EdgeInsets.all(20.0),
                     child: CircularProgressIndicator(
                       valueColor: AlwaysStoppedAnimation<Color>(Colors.brown),
                     ),
                   ),
-                SizedBox(height: 50),
+                const SizedBox(height: 50),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Row(
@@ -192,7 +192,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ],
                   ),
                 ),
-                SizedBox(height: 50),
+                const SizedBox(height: 50),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -200,14 +200,14 @@ class _RegisterPageState extends State<RegisterPage> {
                       onTap: () => AuthService().signInWithGoogle(),
                       imagePath: 'lib/images/google.png',
                     ),
-                    SizedBox(width: 25),
+                    const SizedBox(width: 25),
                     SquareTile(
                       onTap: () {},
                       imagePath: 'lib/images/apple.png',
                     )
                   ],
                 ),
-                SizedBox(height: 50),
+                const SizedBox(height: 50),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -215,10 +215,10 @@ class _RegisterPageState extends State<RegisterPage> {
                       'Already have an account?',
                       style: TextStyle(color: Colors.grey[700]),
                     ),
-                    SizedBox(width: 4),
+                    const SizedBox(width: 4),
                     GestureDetector(
                       onTap: widget.onTap,
-                      child: Text(
+                      child: const Text(
                         'Login now',
                         style: TextStyle(
                           color: Colors.blue,
