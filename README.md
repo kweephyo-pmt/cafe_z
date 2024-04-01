@@ -7,7 +7,7 @@ Welcome to Cafe Z, your one-stop coffee shop app where you can conveniently orde
 ### Ordering and Payment
 - Browse through a selection of delicious drinks.
 - Easily add items to your cart and customize your order.
-- Checkout securely using various payment methods.
+- Checkout securely using the Thai QR payment method.
 
 ### User Settings
 - Personalize your experience by changing your username and bio.
