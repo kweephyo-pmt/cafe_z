@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "442439926476",
+    "firebase_url": "https://cafe-z-default-rtdb.firebaseio.com",
+    "project_id": "cafe-z",
+    "storage_bucket": "cafe-z.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442439926476:android:45a65b3f6de1f525173869",
+        "android_client_info": {
+          "package_name": "com.example.cafe_z"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2LBdYsYE9Lx8orsCqYaS-QKxlNKFyRKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
