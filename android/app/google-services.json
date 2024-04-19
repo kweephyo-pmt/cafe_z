@@ -8,12 +8,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:442439926476:android:45a65b3f6de1f525173869",
+        "mobilesdk_app_id": "1:442439926476:android:2b7acf1cae16f5bc173869",
         "android_client_info": {
-          "package_name": "com.example.cafe_z"
+          "package_name": "com.cafez.app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "442439926476-04l2neijnrqb6fqlfo0giv2iqnbe6nm9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cafez.app",
+            "certificate_hash": "e12623d55f70e3e2546f20b87d41d1eb8dd2fe26"
+          }
+        },
+        {
+          "client_id": "442439926476-mjinj9507srv29d5vu8tu24nq8p9msg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyA2LBdYsYE9Lx8orsCqYaS-QKxlNKFyRKU"
@@ -21,7 +34,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442439926476-mjinj9507srv29d5vu8tu24nq8p9msg9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "442439926476-8ahom1q3lt4unve1hh0qe3r2tba1m68v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cafez.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }
