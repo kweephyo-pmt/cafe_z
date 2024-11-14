@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:flutter/services.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -28,31 +26,6 @@ class AuthService {
     return null;
   }
 
-  Future<UserCredential?> signInWithApple() async {
-    try {
-      final result = await SignInWithApple.getAppleIDCredential(
-        scopes: [
-          AppleIDAuthorizationScopes.email,
-          AppleIDAuthorizationScopes.fullName,
-        ],
-      );
-
-      final OAuthProvider oAuthProvider = new OAuthProvider("apple.com");
-      final credential = oAuthProvider.credential(
-        idToken: result.identityToken,
-        accessToken: result.authorizationCode,
-      );
-
-      final userCredential = await _auth.signInWithCredential(credential);
-      await storeUserData(userCredential.user);
-      return userCredential;
-    } on PlatformException catch (e) {
-      print("Error signing in with Apple: ${e.message}");
-    } catch (e) {
-      print("Error signing in with Apple: $e");
-    }
-    return null;
-  }
 
   Future<void> storeUserData(User? user) async {
     if (user != null) {
